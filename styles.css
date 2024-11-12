@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 218, 233);
+}
+
+/* Cabeçalho */
+header {
+    background-color: rgb(146, 253, 253);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif; 
+    border-bottom: 4px solid rgb(0, 128, 128); 
+}
+
+section#conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#sobre-mim, #galeria {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border: 2px solid rgb(0, 128, 128);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+#sobre-mim h2, #galeria h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #005f86;
+}
+
+#galeria ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+#galeria ul li {
+    flex: 1;
+}
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(0, 128, 128);
+    border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 4px solid #222;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #conteudo {
+        flex-direction: column;
+    }
+}
